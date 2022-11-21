@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-import backgroundImage from "../assets/images/background.svg";
 import reset from "./reset";
 import variables from "./variables";
 import animations from "./animations";
@@ -20,10 +19,8 @@ const GlobalStyle = createGlobalStyle`
     body{
         width: 100vw;
         height: 100vh;
-        overflow: hidden;
-        background: url(${backgroundImage});
-        background-size: cover;
         font-family: 'Montserrat', sans-serif;
+        font-size: 1.6rem;
     }
 
     .react-icons {

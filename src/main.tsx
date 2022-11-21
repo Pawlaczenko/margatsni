@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
+import GlobalStyles from './styles/globalStyles';
+import { IconContext } from "react-icons";
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
+  <IconContext.Provider value={{ className: 'react-icons' }}>
+    <GlobalStyles />
     <App />
-  </React.StrictMode>
+  </IconContext.Provider>
 )
