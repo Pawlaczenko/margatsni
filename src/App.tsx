@@ -3,6 +3,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 
 import MainFeed from './pages/MainFeed/MainFeed';
+import Profile from './pages/Profile/Profile';
 
 const App : FC = () => {
 
@@ -11,7 +12,10 @@ const App : FC = () => {
 			<Routes>
 				<Route path='/' element={<Layout />}>
 					<Route index element={<MainFeed />} />
+					<Route path="/profile" element={<Profile />}></Route>
+					<Route path="/profile/:id" element={<Profile />}></Route>
 				</Route>
+				
 			</Routes>
 		</BrowserRouter>
 	)
