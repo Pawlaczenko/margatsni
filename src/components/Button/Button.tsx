@@ -3,11 +3,11 @@ import styled from 'styled-components'
 
 interface IButtonProps{
     children: React.ReactNode;
-    isPrimary: boolean;
-    handleClick: React.MouseEvent<HTMLElement>;
+    isPrimary?: boolean;
+    handleClick: (e: React.MouseEvent<HTMLElement>) => void;
 }
 interface IStyledButtonProps{
-    isPrimary: boolean;
+    isPrimary?: boolean;
 }
 const Button:FC<IButtonProps> = ({children, handleClick, isPrimary}) => {
   return (
@@ -15,6 +15,7 @@ const Button:FC<IButtonProps> = ({children, handleClick, isPrimary}) => {
   )
 }
 const StyledButton = styled.button<IStyledButtonProps>`
+    background: var(--color-blue);
     background: ${props => props.isPrimary?'var(--color-blue)' : 'var(--color-grey-light)'};
 `
 export default Button

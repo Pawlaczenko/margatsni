@@ -12,7 +12,7 @@ interface IUser {
 const Profile:FC = () => {
     let {id} = useParams();
     return (
-    <div>{id}</div>
+    <></>
   )
 }
 
