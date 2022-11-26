@@ -14,10 +14,12 @@ const UserSideBar : FC = () => {
 }
 
 const StyledWrapper = styled.aside`
-    max-width: 25%;
+    max-width: 33rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+
+    flex-grow: 1;
 `;
 
 const Copyright = styled.p`
