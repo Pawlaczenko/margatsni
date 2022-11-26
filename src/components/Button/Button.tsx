@@ -16,6 +16,11 @@ const Button:FC<IButtonProps> = ({children, handleClick, isPrimary}) => {
 }
 const StyledButton = styled.button<IStyledButtonProps>`
     background: var(--color-blue);
-    background: ${props => props.isPrimary?'var(--color-blue)' : 'var(--color-grey-light)'};
+    background: ${props => props.isPrimary?'var(--color-blue)' : "transparent"};
+    border: 1px solid var(--color-grey);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 `
+
 export default Button

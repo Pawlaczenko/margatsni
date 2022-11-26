@@ -12,8 +12,8 @@ const App : FC = () => {
 			<Routes>
 				<Route path='/' element={<Layout />}>
 					<Route index element={<MainFeed />} />
-					<Route path="/profile" element={<Profile />}></Route>
-					<Route path="/profile/:id" element={<Profile />}></Route>
+					<Route path="/users" element={<Profile />}></Route>
+					<Route path="/users/:id" element={<Profile />}></Route>
 				</Route>
 				
 			</Routes>

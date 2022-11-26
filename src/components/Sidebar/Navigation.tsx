@@ -18,7 +18,7 @@ const Navigation : FC = () => {
 			<RiAddBoxLine /> 
 			Utwórz
 		</NavigationItem>
-		<NavigationItem to='/profile'>
+		<NavigationItem to='/users'>
 			<RiUser4Line />
 			Profil
 		</NavigationItem>
