@@ -1,9 +1,12 @@
 import React from 'react'
 import {FC} from 'react';
+import Button from '../../components/Button/Button';
+import Window from '../../components/Window/Window';
 import styled from 'styled-components';
 import UserSideBar from '../../components/UserSideBar/UserSideBar';
 
 const MainFeed : FC = () => {
+  
   return (
     <Wrapper>
       <UserSideBar />

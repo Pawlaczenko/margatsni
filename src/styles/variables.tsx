@@ -11,6 +11,9 @@ const variables = css`
 
         --base-color-blue: 216, 56%;
         --color-blue: hsla(var(--base-color-blue),50%,100%);
+        
+
+        --color-black-background: hsla(var(--base-color-white), 0%, 80%);
 
         //GENERAL STYLES
     }
